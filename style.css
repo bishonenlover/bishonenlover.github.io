@@ -47,3 +47,10 @@ height:149px;
 .right{
 text-align:right;
 }
+.content b{
+color: transparent;
+    background: -webkit-linear-gradient(-45deg, #ffc3a0, #ffafbd);
+    -webkit-background-clip: text;
+    background-clip: text;
+    font-weight: 800;
+}
