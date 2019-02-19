@@ -1,0 +1,49 @@
+  *{
+  box-sizing:border-box;
+ cursor:url(https://i.imgur.com/fxqyPPr.png),auto;
+}
+a{
+color:#e7a3a4;
+text-decoration:none;
+transition: all ease-in-out .3s;
+position:relative;
+}
+a:hover{
+color:#ccb1b8;
+  cursor:url(https://i.imgur.com/0Me0mof.png),progress!important;
+}
+a:after{
+content:' ';
+bottom:-.3em;
+left:0;
+right:0;
+position:absolute;
+width:0px;
+border:1px solid transparent;
+margin:auto;
+transition: all ease-in-out .3s;
+}
+a:hover::after{
+width:100%;
+border:1px solid #ccb1b8;
+}
+body{
+  margin:0;
+  padding:0;
+  font:1em/1.8 'Roboto';
+  background-color:#ffeaea;
+ 
+}
+.content{
+width:80%;
+ position:fixed;
+top:0;
+bottom:0;
+left:10%;
+margin:auto;
+max-width:457px;
+height:149px;
+}
+.right{
+text-align:right;
+}
