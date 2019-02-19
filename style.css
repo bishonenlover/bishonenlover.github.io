@@ -48,8 +48,9 @@ height:149px;
 text-align:right;
 }
 .content b{
-color: transparent;
+    color: transparent;
     background: -webkit-linear-gradient(-45deg, #ffc3a0, #ffafbd);
+    background: linear-gradient(-45deg, #ffc3a0, #ffafbd);
     -webkit-background-clip: text;
     background-clip: text;
     font-weight: 800;
