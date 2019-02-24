@@ -1,15 +1,16 @@
+
   *{
   box-sizing:border-box;
  cursor:url(https://i.imgur.com/fxqyPPr.png),auto;
 }
 a{
-color:#e7a3a4;
+color:#ffb0bb;
 text-decoration:none;
 transition: all ease-in-out .3s;
 position:relative;
 }
 a:hover{
-color:#ccb1b8;
+ 
   cursor:url(https://i.imgur.com/0Me0mof.png),progress!important;
 }
 a:after{
@@ -25,13 +26,14 @@ transition: all ease-in-out .3s;
 }
 a:hover::after{
 width:100%;
-border:1px solid #ccb1b8;
+border:1px solid #ffb0bb;
 }
 body{
   margin:0;
   padding:0;
   font:1em/1.8 'Roboto';
   background-color:#ffeaea;
+  color:#333;
  
 }
 .content{
@@ -39,12 +41,62 @@ width:80%;
  position:fixed;
 top:0;
 bottom:0;
-left:10%;
+left:0;
+right:0;
 margin:auto;
 max-width:457px;
-height:149px;
+height:277px;
 }
 .right{
 text-align:right;
-}
  
+ 
+}
+.end{
+display:flex;
+justify-content:flex-end;
+align-items:center;
+}
+ .sparkle img{
+width:18px;
+height:18px;
+object-fit:cover;
+margin-top:4px;
+margin-right:.4em;
+}
+.box{
+width:calc(100% - 80px);
+background:white;
+border:1px solid #ece6e6;
+border-radius:4px;
+padding:2em;
+position:relative;
+ 
+}
+.image img{
+width:60px;
+height:60px;
+object-fit:cover;
+border-radius:100%;
+float:right;
+}
+.box::after{
+content:' ';
+display:block;
+border:10px solid transparent;
+border-left-color:white;
+position:absolute;
+top:1em;
+left:100%;
+
+}
+.box::before{
+content:' ';
+display:block;
+border:12px solid transparent;
+border-left-color:#ece6e6;
+position:absolute;
+top:calc(1em - 2px);
+left:100%;
+
+}
