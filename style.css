@@ -80,23 +80,17 @@ object-fit:cover;
 border-radius:100%;
 float:right;
 }
-.box::after{
-content:' ';
-display:block;
-border:10px solid transparent;
-border-left-color:white;
-position:absolute;
-top:1em;
-left:100%;
-
-}
 .box::before{
-content:' ';
-display:block;
-border:12px solid transparent;
-border-left-color:#ece6e6;
-position:absolute;
-top:calc(1em - 2px);
-left:100%;
+ content:' ';
+ display:block;
+ width:12px;
+ height:12px;
+ position:absolute;
+ background:white;
+ left:calc(100% - 5px);
+ border-right:1px solid #ece6e6;
+  border-top:1px solid #ece6e6;
+ transform: rotate(45deg);
+ top:10%;
 
 }
