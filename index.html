@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -39,18 +40,26 @@ h1, h2{
 margin:0;
 font-weight:normal;
 }
-.header{
+.head{
 background:#f6d3d5;
-height:50px;
 width:100%;
 position:fixed;
+top:0;
+left:0;
+z-index:1;
+
+}
+
+.header{
+max-width:800px;
+height:50px;
+width:80%;
+margin:auto;
 display:flex;
 justify-content:space-between;
 align-items:center;
 padding:1em;
-top:0;
-left:0;
-z-index:1;
+
 }
 .name{
 padding:.3em;
@@ -421,7 +430,7 @@ width:98%;
 
  }
  
- @media(max-width:755px){
+ @media(max-width:950px){
 .menu{
 width:100%;
 height:100%;
@@ -454,7 +463,7 @@ margin-left:0;
 .menu-toggle{
 padding:1em;
  position:fixed;
- right:.2em;
+ right:10%;
  top:.3em;
  cursor:pointer;
  z-index:9999999999;
@@ -538,6 +547,7 @@ grid-gap:1em;
 Copied! <span>x</span>
 </div>
 </div>
+<div class="head">
 <div class="header">
  <div class="name">Bishonenlover's</div>
  <div class="menu-toggle">
@@ -553,6 +563,7 @@ Copied! <span>x</span>
             <a href="https://bishonenlover.github.io/colors/" target="_blank">Colors</a>
  </div>
  </div><!-- header -->
+  </div>
  <div class="content">
  
  
