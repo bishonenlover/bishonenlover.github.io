@@ -491,6 +491,7 @@ padding:1em;
  top:.3em;
  cursor:pointer;
  z-index:9999999999;
+  
  }
  
  .hamburger,
@@ -515,7 +516,11 @@ transition: all cubic-bezier(0.25, 0.1, 0.28, 1.54) 0.32s;
  .menu-open .hamburger{
  transform:rotate(45deg);
   transition:.3s;
-margin-left:100%;
+
+ }
+ .menu-open {
+ right:1em;
+ top:1em;
  }
   .menu-open .hamburger::after{
  transform:rotate(-90deg) translate(3px);
@@ -554,10 +559,7 @@ transform:translateY(0);
 margin-top:2em;
 margin-bottom:3em;
 }
-.background{
-height:150px;
  
-}
 ::-webkit-scrollbar{
 display:none;
 }
