@@ -179,36 +179,44 @@ margin-top:3em;
     text-align:justify;
     margin-bottom:3em;
 }
-.box{
-  width:120px;
-  height:120px;
-  position:relative;
-  padding:2%;
-  display:flex;
-  justify-content:center;
-  align-items:center;
-  flex-direction:column;
-  box-shadow: 0 10px 10px -10px rgba(0, 0, 0,.3);
-}
-.box .name{
- font-size:1em;
- color:#444;
-}
-.rgba{
-  font-size:.8em;
-  padding:2%;
-cursor:pointer;
-     -webkit-user-select:all;
-user-select:all;
-}
-.hex{
-  text-align:center;
-  padding:2%;
-  font-size:.9em;
-cursor:pointer;
-     -webkit-user-select:all;
-user-select:all;
-}
+
+  /* color boxes */
+    
+    .box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    .color {
+        width: 70px;
+        height: 70px;
+        border-radius: 100%;
+        border: 3px solid white;
+        box-shadow: 0 0 0 1px #ddd;
+    }
+    
+    .hex {
+        text-align: center;
+        padding: 2%;
+        font-size: .9em;
+        cursor: pointer;
+        -webkit-user-select: all;
+        user-select: all;
+        z-index: 1;
+        color: #444;
+    }
+    
+    .rgba {
+        font-size: .7em;
+        padding: 2%;
+        cursor: pointer;
+        -webkit-user-select: all;
+        user-select: all;
+        z-index: 1;
+        color: #888;
+    }
 .works{
 visibility:hidden; 
  transition:visibility .3s, opacity .3s; 
@@ -515,6 +523,7 @@ grid-gap:1em;
 }
  
 }
+
 </style>
 </head>
 <body>
@@ -605,33 +614,35 @@ After creating so many blogs and get pretty good with coding, I decided to talk 
  Click on the colors codes, it works!
  </div>
  <div class="color-content">
+     <!-- color content -->
+        <div class="box">
+            <div class="color" style="background:#e6e6fa"></div>
+            <div class="hex" onclick="copy(this)">#e6e6fa</div>
+            <div class="rgba" onclick="copy(this)">230, 230, 250</div>
+        </div>
+
  
- <!-- color content -->
-  <div class="box" style="background:#e6e6fa">
-    <span class="name">Lavender</span>
-<span class="hex" onclick="copy(this)">#e6e6fa</span>
-        <span class="rgba" onclick="copy(this)">(230, 230, 250)</span>
-  </div>
-  
   <!-- color content -->
-  <div class="box" style="background:#facada">
-    <span class="name">Facada</span>
-<span class="hex"  onclick="copy(this)" >#facada</span>
-        <span class="rgba"  onclick="copy(this)">(250, 202, 218)</span>
-  </div>
-    <!-- color content -->
-  <div class="box" style="background:#e9e0eb">
-    <span class="name">Soft Thistle</span>
-<span class="hex"  onclick="copy(this)" >#e9e0eb</span>
-        <span class="rgba"  onclick="copy(this)">(233, 224, 235)</span>
-  </div>
+        <div class="box">
+            <div class="color" style="background:#facada"></div>
+            <div class="hex" onclick="copy(this)">#facada</div>
+            <div class="rgba" onclick="copy(this)">250, 202, 218</div>
+        </div>
+
+
+        <!-- color content -->
+        <div class="box">
+            <div class="color" style="background:#e9e0eb"></div>
+            <div class="hex" onclick="copy(this)">#e9e0eb</div>
+            <div class="rgba" onclick="copy(this)">233, 224, 235</div>
+        </div>
  
- <!-- color content -->
-  <div class="box" style="background: #f8f8f8">
-    <span class="name">Light Grey</span>
-<span class="hex"  onclick="copy(this)">#f8f8f8</span>
-        <span class="rgba"  onclick="copy(this)">(248, 248, 248)</span>
-  </div>
+   <!-- color content -->
+        <div class="box">
+            <div class="color" style="background: #f8f8f8"></div>
+            <span class="hex" onclick="copy(this)">#f8f8f8</span>
+            <span class="rgba" onclick="copy(this)">248, 248, 248</span>
+        </div>
   </div><!-- color content --> 
   <p>One of my biggest achievements after learning jquery and javascript, was creating this Fave Colors page. Since I'm always coding and playing around with colors, I had the idea to make an online page showcasing some of my fave colors (or just cute colors), for easy access. I searched for a lot of tutorials on how to make that click+copy to clipboard effect and could finally make one.
   </p>
