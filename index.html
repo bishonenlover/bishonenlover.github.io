@@ -760,7 +760,7 @@ window.addEventListener('scroll', function(){
 
 function animaScroll(){
  const skill = document.querySelectorAll('[data-anima]');
- const y = window.pageYOffset +  ((window.innerHeight * 3) / 4);
+ const y = window.pageYOffset +  (window.innerHeight * 0.75);
  
 skill.forEach(function(element){
 if(y > element.offsetTop){
